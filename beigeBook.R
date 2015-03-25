@@ -83,18 +83,6 @@ bb = read.csv("BB.csv")
 
 colnames(bb)
 
-#Some cleaning of the data using gsub
-# gsub substitutes punctuation (must be surrounded by another set of square brackets)
-# when used in a regular expression with a space ̃
-#bb$text = gsub('[[:punct:]]', ' ', bb$text)
-
-# gsub substitutes character classes that do not give an output such as feed, 
-#backspace and tabspaces with a space ' '.
-#bb$text = gsub('[[:cntrl:]]', ' ', bb$text)
-
-# gsub substitutes numerical values with digits of one or greater with a space ' '.
-#bb$text = gsub('\\d+', ' ', bb$text)
-
 bbText = as.data.frame(bb$text)
 bbText$year = bb$year
 
