@@ -5,7 +5,7 @@ library(RColorBrewer)
 library(wordcloud)
 library(ggplot2)
 setwd("/Users/Jake/Projects/BeigeBook")
-# function score.sentiment
+# function score.sentiment based on work by Jeffrey Breen
 score.sentiment = function(sentences, pos.words, neg.words, .progress='none')
 {
   # Parameters
