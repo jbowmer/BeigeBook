@@ -199,7 +199,7 @@ bbSentiment$mean = mean(bbSentiment$score)
 bbSum = bbSentiment$score
 
 #Centre data by subtracting bbSentiment$mean from bbSum
-bbSentiment$centred = bbSentiment$score - bbSentiment$mean
+bbSentiment$centred = (bbSentiment$score - bbSentiment$mean)/bbSentiment$mean
 
 #label observations above and below zero as "positive" and "negative" respectively. If its NA we call it zero.
 
